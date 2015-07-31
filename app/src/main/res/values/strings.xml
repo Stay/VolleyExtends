@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VolleyExtends</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="deserialize_json">Deserialize JSON</string>
+    <string name="json">{
+    "name": "Stay",
+    "website": "stay4it.com",
+    "desc": "select * from life"
+}</string>
+</resources>
