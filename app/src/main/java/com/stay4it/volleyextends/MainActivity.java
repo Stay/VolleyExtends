@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.squareup.okhttp.OkHttpClient;
 
 public class MainActivity extends ActionBarActivity implements View.OnClickListener {
 
@@ -28,7 +29,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         mJsonStringLabel = (TextView) findViewById(R.id.mJsonStringLabel);
         mDeserializeBtn = (Button) findViewById(R.id.mDeserializeBtn);
         mDeserializeBtn.setOnClickListener(this);
-        mQueue = Volley.newRequestQueue(this);
+        mQueue = Volley.newRequestQueue(this,new OkHttpStack(new OkHttpClient()));
     }
 
 
